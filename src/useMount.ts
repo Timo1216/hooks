@@ -1,4 +1,7 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
+
+const a = 1;
+console.log('a --->', a);
 
 /**
  * 组件 Mount 的 hook，支持 async 啦1
@@ -14,7 +17,6 @@ import { useEffect } from "react";
 export function useMount(fn: () => void): void {
   useEffect(() => {
     fn();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 }
 
