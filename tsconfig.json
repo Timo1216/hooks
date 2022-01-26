@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // ecmascript 目标版本
+    "moduleResolution": "node", // 模块查找方式
+    // "jsx": "preserve", // 保留jsx
+    // "esModuleInterop": true, // 开启这个可以 import 非标准的 esmodule模块 (自动加default) https://blog.csdn.net/juzipidemimi/article/details/103438437、https://zhuanlan.zhihu.com/p/148081795
+    "outDir": "./es", // 输出目录, bigfish 只支持 dist目录
+    "skipLibCheck": true,
+    "declaration": true // 为所有的 .ts, .js 都生成定义文件
+  },
+  "include": ["src"]
+  // "exclude": ["node_modules", "lib", "es", "dist", "examples", "**/test", "**/examples"]
+}
