@@ -1,7 +1,7 @@
 const fabric = require('@umijs/fabric');
 
 module.exports = {
-  ...fabric.default,
+  ...fabric.default, // 这个默认导出就是 eslint
   // extends: [require.resolve('@umijs/fabric/dist/eslint')],
   rules: {
     ...fabric.default.rules,
