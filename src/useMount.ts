@@ -13,6 +13,7 @@ import { useEffect } from 'react';
  */
 export function useMount(fn: () => void): void {
   useEffect(() => {
+    console.log('timo-hooks --->', 1111111);
     fn();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
